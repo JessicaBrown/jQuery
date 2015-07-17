@@ -1,0 +1,9 @@
+.panel {
+    display: inline-block;
+    width: 33%;
+}
+
+body{
+	background-color: purple;
+}
+

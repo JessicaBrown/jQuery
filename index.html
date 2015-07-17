@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Listo</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>jQuery To Do List</title>
+
+    <!-- STYLESHEETS -->
+        <!-- Main CSS  --> 
+    	<link rel="stylesheet" href="./app/styles/main.css">
 </head>
 <body>
+    
+    <!-- Form For New Task Form -->
+    <form id="newTaskForm">
+        <label>New Item</label>
+        <input id="newItemInput" placeholder="New Task">
+        <button id="saveNewItem">Save</button>
+        <button id="cancel">Cancel</button>
+    </form>
 
+    <div class='new-item-header'>
+        <button href="#" class="pull-right pencil" id="newListItem" style="">New</button>
+    </div>
 
+    <div id="newList">
+        New List
+    </div>
 
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <div class="panel">
+            In Progress
+            <ul class="list-group" id="currentList"></ul>
+    </div>
+
+    <div class="panel">
+            Archived
+            <ul class="list-group" id="archivedList"></ul>
+    </div>
+
+<!-- SCRIPT FILES -->
+  <!-- jQuery Library put this on top of main app always-->
+    <script src="./app/scripts/Library/jQuery.min.js"></script>
+    <!-- Main App -->
+    <script src="./app/scripts/app.js"></script>
+  
+
 </body>
 </html>
